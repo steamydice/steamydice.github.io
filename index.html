@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>🎲Steamy Dice🎲</title>
+</head>
+<body>
+    <div class="mobile-overflow-fix">
+        <header id="main-header" class="main-header" data-show-options="false">
+            <h1 class="title">Steamy Dice</h1>
+            <button id="toggle-options" class="toggle-options"><div class="burger">
+                <div class="bar bar__top"></div>
+                <div class="bar bar__middle"></div>
+                <div class="bar bar__bottom"></div>
+            </div></button>
+            <div id="options" class="options">
+                <input type="range" id="colour-setter" class="colour-setter" name="colour" min="0" max="360" value="200">
+                <label for="colour">Colour</label>
+                
+                <select name="die1" id="select-die1">
+                    <option value="dots">Actions</option>
+                    <option value="numbers">Positions</option>
+                    <option value="mixed">Mixed</option>
+                </select>
+                <label for="die1">First Die</label>
+
+                <select name="die2" id="select-die2">
+                    <option value="dots">Body Parts</option>
+                    <option value="numbers">Rooms</option>
+                    <option value="mixed">Mixed</option>
+                </select>
+                <label for="die2">Second Die</label>
+
+                <p>
+                    Steamy Dice web application<br>
+                    &copy; 2022 Steamy Dice <br>
+                    All rights reserved
+                </p>
+            </div>
+            <div id="options-shadow" class="options-shadow"></div>
+        </header>
+        <main>
+            <section class="scene">
+                <div id="steam1" class="steam steam--1">
+                    <div style="--steam: 1"></div>
+                    <div style="--steam: 2"></div>
+                    <div style="--steam: 9"></div>
+                    <div style="--steam: 3"></div>
+                    <div style="--steam: 4"></div>
+                    <div style="--steam: 12"></div>
+                    <div style="--steam: 5"></div>
+                    <div style="--steam: 10"></div>
+                    <div style="--steam: 6"></div>
+                    <div style="--steam: 7"></div>
+                    <div style="--steam: 11"></div>
+                    <div style="--steam: 8"></div>
+                </div>
+                <div id="die1" class="die die-1">
+                    <div class="side side1"><p>Touch</p></div>
+                    <div class="side side2"><p>Lick</p></div>
+                    <div class="side side3"><p>Kiss</p></div>
+                    <div class="side side4"><p>Suck</p></div>
+                    <div class="side side5"><p>Bite</p></div>
+                    <div class="side side6"><p>Massage</p></div>
+                </div>
+    
+                <div id="steam2" class="steam steam--2">
+                    <div style="--steam: 12"></div>
+                    <div style="--steam: 4"></div>
+                    <div style="--steam: 3"></div>
+                    <div style="--steam: 9"></div>
+                    <div style="--steam: 2"></div>
+                    <div style="--steam: 10"></div>
+                    <div style="--steam: 8"></div>
+                    <div style="--steam: 7"></div>
+                    <div style="--steam: 1"></div>
+                    <div style="--steam: 5"></div>
+                    <div style="--steam: 6"></div>
+                    <div style="--steam: 11"></div>
+                </div>
+                <div id="die2" class="die die-2">
+                    <div class="side side1"><p>Lip</p></div>
+                    <div class="side side2"><p>Thigh</p></div>
+                    <div class="side side3"><p>Butt</p></div>
+                    <div class="side side4"><p>Breast</p></div>
+                    <div class="side side5"><p>Neck</p></div>
+                    <div class="side side6"><p>Back</p></div>
+                </div>
+                <div class="floor"></div>
+            </section>
+        </main>
+        <footer class="main-footer">
+            <p>
+                <span id="outcome1"></span> - 
+                <span id="outcome2"></spans>
+            </p>
+            <button id="rollbtn" class="btn btn--roll">Roll</button>
+        </footer>
+    </div>
+</body>
+</html>
